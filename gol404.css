@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Spinnaker);
+
+#gol { z-index: 0; }
+.container { z-index: 1; }
+#gol, .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#gol {
+background-image: linear-gradient(bottom, rgb(227,227,227) 13%, rgb(247,247,247) 57%);
+background-image: -o-linear-gradient(bottom, rgb(227,227,227) 13%, rgb(247,247,247) 57%);
+background-image: -moz-linear-gradient(bottom, rgb(227,227,227) 13%, rgb(247,247,247) 57%);
+background-image: -webkit-linear-gradient(bottom, rgb(227,227,227) 13%, rgb(247,247,247) 57%);
+background-image: -ms-linear-gradient(bottom, rgb(227,227,227) 13%, rgb(247,247,247) 57%);
+
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.13, rgb(227,227,227)),
+    color-stop(0.57, rgb(247,247,247))
+);
+}
+
+.container {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+.container td {
+    text-align: center;
+}
+
+.title, .title-border {
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.title {
+    font-size: 19em;
+    color: lightgrey;
+}
+
+.title-border {
+    font-size: 20em;
+    color: white;
+}
